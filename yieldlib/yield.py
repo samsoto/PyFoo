@@ -1,5 +1,4 @@
 
-
 def generate_data():
     for data in range(10):
         yield data

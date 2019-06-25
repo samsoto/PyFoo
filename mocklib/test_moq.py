@@ -1,6 +1,6 @@
 from mock import Mock
-import module
-import moq
+from mocklib import module
+from mocklib import moq_v1 as moq
 
 
 @moq.patch(module.dao)
