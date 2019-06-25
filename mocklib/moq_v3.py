@@ -6,6 +6,8 @@ def _name(obj) -> str:
     return f'{obj.__module__}.{obj.__name__}'
 
 
+abc = Mock()
+
 @contextmanager
 def _patch(func):
     stash = func

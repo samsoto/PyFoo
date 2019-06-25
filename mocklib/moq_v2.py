@@ -24,7 +24,6 @@ def patch(patched_func):
     def decorator(func):
         def wrapper(*args: Mock):
             with Patch(patched_func) as mock_func:
-                print(mock_func)
                 return func(*[*args, mock_func])
         return wrapper
     return decorator
